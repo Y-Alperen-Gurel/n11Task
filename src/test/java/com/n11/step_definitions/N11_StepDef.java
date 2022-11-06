@@ -86,6 +86,8 @@ public class N11_StepDef {
         Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(sayfa+""));//concatination
     }
 
+    /**---------------------------------------Favoriye ekleme-----------------------------------------*/
+
     @When("üstten üçüncü ürün favoriye ekle")
     public void üsttenÜçüncüÜrünFavoriyeEkle() {
         n11KullanıcıSayfa.ücüncüUrün.click();
@@ -108,6 +110,8 @@ public class N11_StepDef {
         Assert.assertEquals(productId,n11KullanıcıSayfa.favoriUrunu.getAttribute("data-id"));
 
     }
+
+    /**---------------------------------------Favoriden silme-----------------------------------------*/
 
     @When("sil butonuna tıklayarak ürünü favoriden sil")
     public void silButonunaTıklayarakÜrünüFavoridenSil() {
